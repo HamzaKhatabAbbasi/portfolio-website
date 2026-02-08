@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Khatab | Data Analyst & ML Engineer</title>
+    <meta name="description"
+        content="Data Analyst specializing in machine learning, interactive dashboards, and compelling data storytelling. Transform complex data into strategic decisions.">
+    <meta name="keywords"
+        content="Data Analyst, Machine Learning, Python, SQL, Power BI, Tableau, Deep Learning, Business Intelligence">
+    <meta name="author" content="Hamza Khatab">
+    <meta name="theme-color" content="#0A0A0F">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hamza Khatab | Data Analyst & ML Engineer">
+    <meta property="og:description"
+        content="Transforming complex data into meaningful insights that drive strategic decisions.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-letter">H</span>
+                <span class="logo-letter">K</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <p class="preloader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-logo">
+                    <span>HK</span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Hamza Khatab</span>
+                    <span class="brand-title">Data Analyst</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="cv/hamza_cv.pdf" class="btn btn-outline btn-sm" download>
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="cv/hamza_cv.pdf" class="btn btn-primary btn-full" download>Download Resume</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name gradient-text">Hamza Khatab</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+
+                <p class="hero-description">
+                    I transform <span class="highlight">complex data</span> into
+                    <span class="highlight">meaningful insights</span> that drive
+                    <span class="highlight">strategic decisions</span>. Specializing in
+                    machine learning, interactive dashboards, and compelling data storytelling.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary btn-magnetic">
+                        <span class="btn-text">View My Work</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#contact" class="btn btn-glass btn-magnetic">
+                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item" data-count="6">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Months Experience</span>
+                    </div>
+                    <div class="stat-item" data-count="20">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item" data-count="15">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Dashboards Built</span>
+                    </div>
+                    <div class="stat-item" data-count="100">
+                        <span class="stat-number">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="profile-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-ring"></div>
+                    <div class="profile-image">
+                        <img src="images/hamza_pro.png" alt="Hamza Khatab - Data Analyst" loading="eager">
+                    </div>
+                    <!-- Floating Tech Icons -->
+                    <div class="floating-icons">
+                        <div class="float-icon icon-python" data-speed="0.5">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="float-icon icon-database" data-speed="0.3">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="float-icon icon-chart" data-speed="0.7">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="float-icon icon-brain" data-speed="0.4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+                <p class="section-subtitle">My academic journey and professional credentials</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Education Column -->
+                <div class="about-column" data-aos="fade-right">
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content glass-card">
+                                <h4>BS in Business Analytics</h4>
+                                <p class="timeline-org">International Islamic University, Islamabad</p>
+                                <span class="timeline-badge">Ongoing</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content glass-card">
+                                <h4>Associate's Degree: Data Science and AI</h4>
+                                <p class="timeline-org">PDC NUST University</p>
+                                <span class="timeline-badge completed">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Column -->
+                <div class="about-column" data-aos="fade-left">
+                    <div class="column-header">
+                        <div class="column-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certifications</h3>
+                    </div>
+
+                    <div class="cert-grid">
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h4>Data Analysis with Tableau</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/1JCLBES1H8PK"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                            <h4>Machine Learning with Python</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/ZBDRW3UTZDKG"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="cert-icon"><i class="fas fa-search-plus"></i></div>
+                            <h4>Exploratory Data Analysis for Machine Learning</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/7TSQM9K65JBR"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="cert-icon"><i class="fas fa-chart-pie"></i></div>
+                            <h4>Data-Driven Decisions with Power BI</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/VVVJ99EK3GO9"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="cert-icon"><i class="fas fa-chart-area"></i></div>
+                            <h4>Data Visualization with Python</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/CO69P3SYI838"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                        <div class="cert-card glass-card" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="cert-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL for Data Science</h4>
+                            <p>Coursera</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/T20KEKEHDQTJ"
+                                target="_blank" class="cert-link-btn">
+                                <i class="fas fa-external-link-alt"></i> View on Coursera
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta" data-aos="fade-up">
+                <a href="cv/hamza_cv.pdf" class="btn btn-primary btn-magnetic" download>
+                    <i class="fas fa-download"></i>
+                    <span>Download Full CV</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <p class="section-subtitle">Cutting-edge tools and technologies I leverage to create impactful solutions
+                </p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="bento-grid">
+                <!-- Machine Learning - Large Card -->
+                <div class="bento-card bento-large glass-card" data-aos="fade-up" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon ml-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Machine Learning</h3>
+                            <div class="proficiency-ring" data-percent="90">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="90, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Building predictive models and algorithms to solve complex business
+                        problems with cutting-edge ML techniques.</p>
+                    <div class="card-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span>
+                        <span class="tag">Plotly</span>
+                    </div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="bento-card glass-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon viz-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Data Visualization</h3>
+                            <div class="proficiency-ring" data-percent="95">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="95, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Creating interactive dashboards and compelling visual stories.</p>
+                    <div class="card-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="bento-card bento-wide glass-card" data-aos="fade-up" data-aos-delay="150" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon db-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Database Management</h3>
+                            <div class="proficiency-ring" data-percent="85">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="85, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Writing efficient queries and managing large datasets.</p>
+                    <div class="card-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Deep Learning -->
+                <div class="bento-card glass-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon dl-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Deep Learning</h3>
+                            <div class="proficiency-ring" data-percent="60">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="60, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Neural networks for pattern recognition and prediction.</p>
+                    <div class="card-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Keras</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Business Intelligence - Wide Card -->
+                <div class="bento-card bento-wide glass-card" data-aos="fade-up" data-aos-delay="250" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon bi-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Business Intelligence</h3>
+                            <div class="proficiency-ring" data-percent="88">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="88, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Transforming raw data into strategic insights that empower businesses to
+                        make informed decisions.</p>
+                    <div class="card-tags">
+                        <span class="tag">KPIs</span>
+                        <span class="tag">Reporting</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Data Strategy</span>
+                    </div>
+                </div>
+
+                <!-- Excel -->
+                <div class="bento-card glass-card" data-aos="fade-up" data-aos-delay="300" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="card-icon excel-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Advanced Excel</h3>
+                            <div class="proficiency-ring" data-percent="96">
+                                <svg viewBox="0 0 36 36">
+                                    <path class="ring-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="ring-fill" stroke-dasharray="96, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <span class="ring-text">96%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-description">Complex data manipulation and automation with VBA.</p>
+                    <div class="card-tags">
+                        <span class="tag">Pivot Tables</span>
+                        <span class="tag">Power Query</span>
+                        <span class="tag">Formulas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Bar -->
+            <div class="tech-stack" data-aos="fade-up">
+                <h3>Technical Proficiency</h3>
+                <div class="stack-grid">
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Python</span>
+                            <span class="stack-percent">90%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="90"
+                                style="--bar-color: linear-gradient(90deg, #ffd43b, #306998)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">SQL</span>
+                            <span class="stack-percent">95%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="95"
+                                style="--bar-color: linear-gradient(90deg, #336791, #1f4e79)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Power BI</span>
+                            <span class="stack-percent">92%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="92"
+                                style="--bar-color: linear-gradient(90deg, #f2c811, #e65100)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Tableau</span>
+                            <span class="stack-percent">88%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="88"
+                                style="--bar-color: linear-gradient(90deg, #1f77b4, #ff7f0e)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Excel</span>
+                            <span class="stack-percent">96%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="96"
+                                style="--bar-color: linear-gradient(90deg, #217346, #0f7b0f)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Statistics</span>
+                            <span class="stack-percent">90%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="90"
+                                style="--bar-color: linear-gradient(90deg, #ec4899, #be185d)"></div>
+                        </div>
+                    </div>
+                    <div class="stack-item">
+                        <div class="stack-info">
+                            <span class="stack-name">Deep Learning</span>
+                            <span class="stack-percent">60%</span>
+                        </div>
+                        <div class="stack-bar">
+                            <div class="stack-fill" data-width="60"
+                                style="--bar-color: linear-gradient(90deg, #8B5CF6, #6D28D9)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my data analysis projects demonstrating expertise in machine
+                    learning, visualization, and business intelligence.</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <span>All</span>
+                    <span class="filter-count">6</span>
+                </button>
+                <button class="filter-btn" data-filter="machine-learning">
+                    <span>Machine Learning</span>
+                </button>
+                <button class="filter-btn" data-filter="dashboard">
+                    <span>Power BI</span>
+                </button>
+                <button class="filter-btn" data-filter="deep-learning">
+                    <span>Deep Learning</span>
+                </button>
+                <button class="filter-btn" data-filter="visualization">
+                    <span>Tableau</span>
+                </button>
+                <button class="filter-btn" data-filter="sql">
+                    <span>SQL</span>
+                </button>
+                <button class="filter-btn" data-filter="excel">
+                    <span>Excel</span>
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- ML Project -->
+                <div class="project-card glass-card" data-category="machine-learning" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjiBXeMHquntdscQDmt9rSOLHlPXGUHZzAIMG4R2aqc0-EysMc7zTiy_Be2x-0e_qhU0&usqp=CAU"
+                            alt="Machine Learning Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Machine-Learning-Repo"
+                                class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge">ML</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning Model</h3>
+                        <p>Built a predictive machine learning model using Python and Scikit-learn, leveraging effective
+                            preprocessing, feature engineering, and cross-validation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Machine-Learning-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Power BI Project -->
+                <div class="project-card glass-card" data-category="dashboard" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://support.microsoft.com/images/en-us/54628b72-3f3b-4dd9-9437-e3d8d201d334"
+                            alt="Power BI Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Power-BI-Repo" class="project-link-btn"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge bi">Power BI</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Power BI Dashboard</h3>
+                        <p>Built an interactive Power BI dashboard with real-time data tracking, advanced analytics, and
+                            customizable visualizations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Reports</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">Data Modeling</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Power-BI-Repo" class="project-link"
+                            target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Deep Learning Project -->
+                <div class="project-card glass-card" data-category="deep-learning" data-aos="fade-up"
+                    data-aos-delay="150">
+                    <div class="project-image">
+                        <img src="https://trainingexpress.org.uk/wp-content/uploads/2024/05/Deep-Learning-Neural-Network-with-R-460x283.png"
+                            alt="Deep Learning Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Deep-Learning-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge dl">DL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Deep Learning Model</h3>
+                        <p>Developed a deep learning model for real-time prediction and pattern recognition using neural
+                            networks.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Deep-Learning-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tableau Project -->
+                <div class="project-card glass-card" data-category="visualization" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://www.zuar.com/blog/content/images/2022/02/tableau-pic.jpeg"
+                            alt="Tableau Visualization">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Tableaue-Dashboard-Repo"
+                                class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge tableau">Tableau</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tableau Analytics</h3>
+                        <p>Comprehensive data analysis using Tableau to identify key performance trends and actionable
+                            insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">Forecasting</span>
+                            <span class="tag">Data Viz</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Tableaue-Dashboard-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SQL Project -->
+                <div class="project-card glass-card" data-category="sql" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-image">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/2258134001/display_1500/stock-photo-relational-database-tables-on-databases-are-placed-on-structured-query-language-code-with-server-2258134001.jpg"
+                            alt="SQL Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/SQL-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge sql">SQL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>SQL Data Analysis</h3>
+                        <p>Complex SQL queries for data extraction, transformation, and analysis from relational
+                            databases.</p>
+                        <div class="project-tags">
+                            <span class="tag">Data Manipulation</span>
+                            <span class="tag">Joins</span>
+                            <span class="tag">Aggregation</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/SQL-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Excel Project -->
+                <div class="project-card glass-card" data-category="excel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop&auto=format&q=80"
+                            alt="Excel Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/MSExcel-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge excel">Excel</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Excel Analytics</h3>
+                        <p>Data analysis, reporting, and visualization using formulas, pivot tables, and charts.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power Query</span>
+                            <span class="tag">Formulas</span>
+                            <span class="tag">Lookups</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/MSExcel-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="#" class="btn btn-glass btn-magnetic">
+                    <i class="fas fa-folder-open"></i>
+                    <span>View All Projects</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Ready to transform your data into actionable insights? Let's collaborate and
+                    create something amazing together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-intro">
+                        <h3>Start a Conversation</h3>
+                        <p>Feel free to reach out through any of these channels. I typically respond within 24 hours.
+                        </p>
+                    </div>
+
+                    <!-- Contact Options -->
+                    <div class="contact-options">
+                        <a href="mailto:hamzakhatababbasi@gmail.com?subject=Coffee%20Chat%20Request&body=Hi%20Hamza,%0A%0AI'd%20like%20to%20schedule%20a%20casual%2030-minute%20conversation%20with%20you."
+                            class="contact-option glass-card">
+                            <div class="option-icon coffee">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="option-content">
+                                <h4>Coffee Chat</h4>
+                                <p>Casual 30-min conversation</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="mailto:hamzakhatababbasi@gmail.com?subject=Project%20Discussion%20Request&body=Hi%20Hamza,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AProject%20Details:%0A"
+                            class="contact-option glass-card">
+                            <div class="option-icon discussion">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="option-content">
+                                <h4>Project Discussion</h4>
+                                <p>Detailed project consultation</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="mailto:hamzakhatababbasi@gmail.com?subject=Collaboration%20Opportunity&body=Hi%20Hamza,%0A%0AI'm%20interested%20in%20a%20long-term%20collaboration/partnership%20with%20you.%0A%0ADetails:%0A"
+                            class="contact-option glass-card">
+                            <div class="option-icon collaboration">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="option-content">
+                                <h4>Collaboration</h4>
+                                <p>Long-term partnership</p>
+                            </div>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">Email</span>
+                                <a href="mailto:hamzakhatababbasi@gmail.com">hamzakhatababbasi@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">Phone</span>
+                                <a href="tel:+923181578366">+92 318 1578366</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <span class="detail-label">Location</span>
+                                <span>Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hamzakhatab/" target="_blank"
+                            class="social-link btn-magnetic" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/HamzaKhatabAbbasi" target="_blank" class="social-link btn-magnetic"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/923181578366" target="_blank" class="social-link btn-magnetic"
+                            aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:hamzakhatababbasi@gmail.com" class="social-link btn-magnetic"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contact-form" class="contact-form glass-card"
+                        action="https://formsubmit.co/hamzakhatababbasi@gmail.com" method="POST">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>I'll get back to you within 24 hours</p>
+                        </div>
+
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                                <span class="form-highlight"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="_subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="form-highlight"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-highlight"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-magnetic">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            <span class="btn-loader"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <span>HK</span>
+                    </div>
+                    <div class="brand-info">
+                        <h3>Hamza Khatab</h3>
+                        <p>Data Analyst & ML Enthusiast</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#">Data Analysis</a>
+                        <a href="#">Machine Learning</a>
+                        <a href="#">Dashboard Creation</a>
+                        <a href="#">Business Intelligence</a>
+                    </div>
+                </div>
+
+                <div class="footer-availability">
+                    <div class="availability-indicator">
+                        <span class="pulse-dot"></span>
+                        <span>Available for projects</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hamza Khatab. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
