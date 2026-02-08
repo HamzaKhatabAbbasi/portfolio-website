@@ -544,6 +544,14 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
 
+    // Check if returning from successful submission (redirect from Web3Forms)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        showNotification('Thanks for your message! I\'ll get back to you soon.', 'success');
+        // Clean up URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
@@ -556,19 +564,38 @@ function initContactForm() {
         btnIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
         submitBtn.disabled = true;
 
-        // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        try {
+            // Actually submit the form to Web3Forms
+            const formData = new FormData(form);
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+                mode: 'cors',
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
-        // Success state
-        btnText.textContent = 'Message Sent!';
-        btnIcon.innerHTML = '<i class="fas fa-check"></i>';
+            const result = await response.json();
 
-        // Show notification
-        showNotification('Thanks for your message! I\'ll get back to you soon.', 'success');
+            if (result.success) {
+                // Success state
+                btnText.textContent = 'Message Sent!';
+                btnIcon.innerHTML = '<i class="fas fa-check"></i>';
+                showNotification('Thanks for your message! I\'ll get back to you soon.', 'success');
+                form.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            // If AJAX fails, fall back to standard form submission
+            console.log('AJAX submission failed, falling back to form submission');
+            form.submit();
+            return;
+        }
 
-        // Reset form
+        // Reset button after delay
         setTimeout(() => {
-            form.reset();
             btnText.textContent = 'Send Message';
             btnIcon.innerHTML = '<i class="fas fa-paper-plane"></i>';
             submitBtn.disabled = false;
