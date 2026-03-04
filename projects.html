@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Hamza Khatab — Data Analyst & ML Engineer</title>
+    <meta name="description"
+        content="Explore Hamza Khatab's portfolio of data analysis, machine learning, and business intelligence projects.">
+    <meta name="keywords"
+        content="Data Analysis Projects, Machine Learning, Power BI, Tableau, Deep Learning, SQL, Portfolio">
+    <meta name="author" content="Hamza Khatab">
+    <meta name="theme-color" content="#0A0A0F">
+
+    <meta property="og:title" content="Projects | Hamza Khatab — Data Analyst & ML Engineer">
+    <meta property="og:description"
+        content="A showcase of data analysis and machine learning projects by Hamza Khatab.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-logo"><span>HK</span></div>
+                <div class="brand-text">
+                    <span class="brand-name">Hamza Khatab</span>
+                    <span class="brand-title">Data Analyst</span>
+                </div>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link" data-text="Home">Home</a>
+                <a href="about.html" class="nav-link" data-text="About">About</a>
+                <a href="skills.html" class="nav-link" data-text="Skills">Skills</a>
+                <a href="certifications.html" class="nav-link" data-text="Certifications">Certifications</a>
+                <a href="projects.html" class="nav-link active" data-text="Projects">Projects</a>
+                <a href="contact.html" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="cv/hamza_cv.pdf" class="btn btn-outline btn-sm" download>
+                    <i class="fas fa-download"></i><span>Resume</span>
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="skills.html" class="mobile-link">Skills</a>
+            <a href="certifications.html" class="mobile-link">Certifications</a>
+            <a href="projects.html" class="mobile-link active">Projects</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="cv/hamza_cv.pdf" class="btn btn-primary btn-full" download>Download Resume</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h1 class="page-hero-title">Featured <span class="gradient-text">Projects</span></h1>
+                <p class="page-hero-subtitle">A showcase of my data analysis projects demonstrating expertise in
+                    machine learning, visualization, and business intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="section process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">How I Work</span>
+                <h2 class="section-title">My <span class="gradient-text">Process</span></h2>
+                <p class="section-subtitle">A structured, results-driven approach to every data project</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">01</div>
+                    <div class="process-icon"><i class="fas fa-search"></i></div>
+                    <h3>Discover</h3>
+                    <p>Understand the business problem, define objectives, and identify the data sources needed to
+                        extract meaningful insights.</p>
+                </div>
+                <div class="process-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">02</div>
+                    <div class="process-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Analyze</h3>
+                    <p>Clean, transform, and explore data using statistical methods and machine learning algorithms to
+                        uncover patterns and trends.</p>
+                </div>
+                <div class="process-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">03</div>
+                    <div class="process-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Visualize</h3>
+                    <p>Craft interactive dashboards and compelling visualizations that tell a clear, data-driven story
+                        to
+                        stakeholders.</p>
+                </div>
+                <div class="process-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-number">04</div>
+                    <div class="process-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Deliver</h3>
+                    <p>Present actionable recommendations with clear documentation, ensuring stakeholders can make
+                        informed strategic decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Project <span class="gradient-text">Gallery</span></h2>
+                <p class="section-subtitle">Filter and explore my work across different domains</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <span>All</span>
+                    <span class="filter-count">6</span>
+                </button>
+                <button class="filter-btn" data-filter="machine-learning">
+                    <span>Machine Learning</span>
+                </button>
+                <button class="filter-btn" data-filter="dashboard">
+                    <span>Power BI</span>
+                </button>
+                <button class="filter-btn" data-filter="deep-learning">
+                    <span>Deep Learning</span>
+                </button>
+                <button class="filter-btn" data-filter="visualization">
+                    <span>Tableau</span>
+                </button>
+                <button class="filter-btn" data-filter="sql">
+                    <span>SQL</span>
+                </button>
+                <button class="filter-btn" data-filter="excel">
+                    <span>Excel</span>
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- ML Project -->
+                <div class="project-card glass-card" data-category="machine-learning" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjiBXeMHquntdscQDmt9rSOLHlPXGUHZzAIMG4R2aqc0-EysMc7zTiy_Be2x-0e_qhU0&usqp=CAU"
+                            alt="Machine Learning Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Machine-Learning-Repo"
+                                class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge">ML</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning Model</h3>
+                        <p>Built a predictive machine learning model using Python and Scikit-learn, leveraging effective
+                            preprocessing, feature engineering, and cross-validation for optimal performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Machine-Learning-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Power BI Project -->
+                <div class="project-card glass-card" data-category="dashboard" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://support.microsoft.com/images/en-us/54628b72-3f3b-4dd9-9437-e3d8d201d334"
+                            alt="Power BI Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Power-BI-Repo" class="project-link-btn"
+                                target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge bi">Power BI</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Power BI Dashboard</h3>
+                        <p>Built an interactive Power BI dashboard with real-time data tracking, advanced analytics, and
+                            customizable visualizations for stakeholder reporting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Reports</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">Data Modeling</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Power-BI-Repo" class="project-link"
+                            target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Deep Learning Project -->
+                <div class="project-card glass-card" data-category="deep-learning" data-aos="fade-up"
+                    data-aos-delay="150">
+                    <div class="project-image">
+                        <img src="https://trainingexpress.org.uk/wp-content/uploads/2024/05/Deep-Learning-Neural-Network-with-R-460x283.png"
+                            alt="Deep Learning Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Deep-Learning-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge dl">DL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Deep Learning Model</h3>
+                        <p>Developed a deep learning model for real-time prediction and pattern recognition using neural
+                            networks with TensorFlow and advanced architectures.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Neural Networks</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Deep-Learning-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tableau Project -->
+                <div class="project-card glass-card" data-category="visualization" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://www.zuar.com/blog/content/images/2022/02/tableau-pic.jpeg"
+                            alt="Tableau Visualization">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/Tableaue-Dashboard-Repo"
+                                class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge tableau">Tableau</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tableau Analytics</h3>
+                        <p>Comprehensive data analysis using Tableau to identify key performance trends and actionable
+                            insights through interactive visualizations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Forecasting</span>
+                            <span class="tag">Data Viz</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/Tableaue-Dashboard-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SQL Project -->
+                <div class="project-card glass-card" data-category="sql" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-image">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/2258134001/display_1500/stock-photo-relational-database-tables-on-databases-are-placed-on-structured-query-language-code-with-server-2258134001.jpg"
+                            alt="SQL Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/SQL-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge sql">SQL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>SQL Data Analysis</h3>
+                        <p>Complex SQL queries for data extraction, transformation, and analysis from relational
+                            databases, featuring joins, subqueries, and window functions.</p>
+                        <div class="project-tags">
+                            <span class="tag">Data Manipulation</span>
+                            <span class="tag">Joins</span>
+                            <span class="tag">Aggregation</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/SQL-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Excel Project -->
+                <div class="project-card glass-card" data-category="excel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop&auto=format&q=80"
+                            alt="Excel Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/HamzaKhatabAbbasi/MSExcel-Repo" class="project-link-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <span class="project-badge excel">Excel</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Excel Analytics</h3>
+                        <p>Data analysis, reporting, and visualization using formulas, pivot tables, and charts for
+                            comprehensive business reporting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power Query</span>
+                            <span class="tag">Formulas</span>
+                            <span class="tag">Lookups</span>
+                        </div>
+                        <a href="https://github.com/HamzaKhatabAbbasi/MSExcel-Repo" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card glass-card" data-aos="fade-up">
+                <h2>Have a Project in Mind?</h2>
+                <p>Let's work together to turn your data into actionable insights and strategic advantages.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-magnetic">
+                        <span class="btn-text">Start a Conversation</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="cv/hamza_cv.pdf" class="btn btn-glass btn-magnetic" download>
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo"><span>HK</span></div>
+                    <div class="brand-info">
+                        <h3>Hamza Khatab</h3>
+                        <p>Data Analyst & ML Enthusiast</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="certifications.html">Certifications</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="about.html#services">Data Analysis</a>
+                        <a href="about.html#services">Machine Learning</a>
+                        <a href="about.html#services">Dashboard Creation</a>
+                        <a href="about.html#services">Business Intelligence</a>
+                    </div>
+                </div>
+                <div class="footer-availability">
+                    <div class="availability-indicator">
+                        <span class="pulse-dot"></span>
+                        <span>Available for projects</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hamza Khatab. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

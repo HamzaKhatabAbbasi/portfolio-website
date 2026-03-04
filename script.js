@@ -6,7 +6,6 @@
 // Wait for DOM
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all modules
-    initPreloader();
     initParticles();
     initCustomCursor();
     initNavigation();
@@ -18,25 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initBackToTop();
     initMagneticButtons();
     initTiltEffect();
+    initFAQ();
+    initEntranceAnimations();
 });
 
 /* ========================================
-   PRELOADER
+   ENTRANCE ANIMATIONS
    ======================================== */
-function initPreloader() {
-    const preloader = document.getElementById('preloader');
-
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-            document.body.style.overflow = 'visible';
-
-            // Trigger entrance animations
-            initEntranceAnimations();
-        }, 2500);
-    });
-}
-
 function initEntranceAnimations() {
     // Animate hero elements with GSAP
     if (typeof gsap !== 'undefined') {
@@ -250,7 +237,6 @@ function initNavigation() {
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('nav-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-link');
 
     // Scroll effect
     let lastScroll = 0;
@@ -280,48 +266,32 @@ function initNavigation() {
             mobileMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
     }
 
-    // Smooth scroll for nav links
-    navLinks.forEach(link => {
+    // Handle in-page hash links (e.g. #home on homepage)
+    const hashLinks = document.querySelectorAll('a[href^="#"]');
+    hashLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const targetId = link.getAttribute('href');
             const target = document.querySelector(targetId);
 
             if (target) {
+                e.preventDefault();
                 const offset = 80;
                 const targetPosition = target.offsetTop - offset;
-
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-
-                // Close mobile menu
-                if (mobileMenu) {
-                    mobileMenu.classList.remove('active');
-                    navToggle.classList.remove('active');
-                }
-            }
-        });
-    });
-
-    // Active link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
             }
         });
     });
@@ -709,6 +679,31 @@ function initTiltEffect() {
 
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+    });
+}
+
+/* ========================================
+   FAQ ACCORDION
+   ======================================== */
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (!faqItems.length) return;
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+            }
         });
     });
 }
