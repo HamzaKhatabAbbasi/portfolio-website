@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form Test</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Form Test</h1>
+    <p>This is a simple test to verify Web3Forms is working.</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="abddd710-73c1-4d3d-9651-d5618998ca1d">
+
+        <label>Name:</label>
+        <input type="text" name="name" required value="Test User">
+
+        <label>Email:</label>
+        <input type="email" name="email" required value="test@example.com">
+
+        <label>Subject:</label>
+        <input type="text" name="subject" required value="Test from Portfolio">
+
+        <label>Message:</label>
+        <textarea name="message" required>This is a test message to verify the form works!</textarea>
+
+        <button type="submit">Send Test</button>
+    </form>
+</body>
+
+</html>
