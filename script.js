@@ -27,64 +27,47 @@ document.addEventListener('DOMContentLoaded', () => {
 function initEntranceAnimations() {
     // Animate hero elements with GSAP
     if (typeof gsap !== 'undefined') {
+        const hero = document.querySelector('.hero');
+        if (!hero) return;
+
         const tl = gsap.timeline();
 
-        tl.from('.availability-badge', {
-            opacity: 0,
-            y: 20,
-            duration: 0.6,
-            ease: 'power3.out'
-        })
-            .from('.hero-title .title-line', {
-                opacity: 0,
-                y: 30,
-                duration: 0.6,
-                ease: 'power3.out'
-            }, '-=0.3')
-            .from('.hero-title .title-name', {
-                opacity: 0,
-                y: 40,
-                duration: 0.8,
-                ease: 'power3.out'
-            }, '-=0.4')
-            .from('.hero-subtitle', {
-                opacity: 0,
-                duration: 0.6,
-                ease: 'power3.out'
-            }, '-=0.4')
-            .from('.hero-description', {
-                opacity: 0,
-                y: 20,
-                duration: 0.6,
-                ease: 'power3.out'
-            }, '-=0.3')
-            .from('.hero-cta .btn', {
-                opacity: 0,
-                y: 20,
-                stagger: 0.15,
-                duration: 0.6,
-                ease: 'power3.out'
-            }, '-=0.3')
-            .from('.stat-item', {
-                opacity: 0,
-                y: 30,
-                stagger: 0.1,
-                duration: 0.6,
-                ease: 'power3.out'
-            }, '-=0.3')
-            .from('.profile-wrapper', {
-                opacity: 0,
-                scale: 0.8,
-                duration: 1,
-                ease: 'elastic.out(1, 0.5)'
-            }, '-=1')
-            .from('.float-icon', {
-                opacity: 0,
-                scale: 0,
-                stagger: 0.1,
-                duration: 0.6,
-                ease: 'back.out(1.7)'
-            }, '-=0.5');
+        tl.fromTo('.availability-badge',
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }
+        )
+            .fromTo('.hero-title .title-line',
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3'
+            )
+            .fromTo('.hero-title .title-name',
+                { opacity: 0, y: 40 },
+                { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4'
+            )
+            .fromTo('.hero-subtitle',
+                { opacity: 0 },
+                { opacity: 1, duration: 0.6, ease: 'power3.out' }, '-=0.4'
+            )
+            .fromTo('.hero-description',
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3'
+            )
+            .fromTo('.hero-cta .btn',
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, stagger: 0.15, duration: 0.6, ease: 'power3.out' }, '-=0.3'
+            )
+            .fromTo('.stat-item',
+                { opacity: 0, y: 30 },
+                { opacity: 1, y: 0, stagger: 0.1, duration: 0.6, ease: 'power3.out' }, '-=0.3'
+            )
+            .fromTo('.profile-wrapper',
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 1, ease: 'elastic.out(1, 0.5)' }, '-=1'
+            )
+            .fromTo('.float-icon',
+                { opacity: 0, scale: 0 },
+                { opacity: 1, scale: 1, stagger: 0.1, duration: 0.6, ease: 'back.out(1.7)' }, '-=0.5'
+            );
     }
 }
 
